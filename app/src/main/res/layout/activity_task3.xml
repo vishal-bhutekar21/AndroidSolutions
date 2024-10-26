@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#8887CEEB"
+    tools:context=".Task3">
+
+
+    <TextView
+        android:id="@+id/about_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:fontFamily="@font/roboto"
+        android:padding="20dp"
+        android:text="C 3 Community: 🌟\nThe app that connects passionate developers and learners. Learn, code, and grow together! 🚀\n\nConnect with us: 👇"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/linkedin_link"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.1" />
+
+    <TextView
+        android:id="@+id/linkedin_link"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="16dp"
+        android:background="@drawable/rounded_button"
+        android:clickable="true"
+        android:focusable="true"
+        android:fontFamily="@font/roboto_bold"
+        android:onClick="openLinkedIn"
+        android:padding="10dp"
+        android:text="🔗 LinkedIn"
+        android:textAlignment="center"
+        android:textColor="#0e76a8"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/instagram_link"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/about_info"
+        app:layout_constraintWidth_percent="0.48" />
+
+    <TextView
+        android:id="@+id/instagram_link"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/rounded_button"
+        android:clickable="true"
+        android:focusable="true"
+        android:fontFamily="@font/roboto_bold"
+        android:onClick="openInstagram"
+        android:padding="10dp"
+        android:text="📷 Instagram"
+        android:textAlignment="center"
+        android:textColor="#E1306C"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/linkedin_link"
+        app:layout_constraintTop_toBottomOf="@+id/about_info"
+        app:layout_constraintWidth_percent="0.48" />
+
+    <Button
+        android:id="@+id/msgsend"
+        android:backgroundTint="#AC0909"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+
+        android:fontFamily="@font/roboto_bold"
+        android:onClick="openGoogle"
+        android:padding="10dp"
+        android:text="📤Message Sender "
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/google_link"
+        app:layout_constraintVertical_bias="0.106"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/google_link"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/rounded_button"
+        android:clickable="true"
+        android:focusable="true"
+        android:fontFamily="@font/roboto_bold"
+        android:onClick="openGoogle"
+        android:padding="10dp"
+        android:text="🔍 Google"
+        android:textAlignment="center"
+        android:textColor="#34A853"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linkedin_link" />
+</androidx.constraintlayout.widget.ConstraintLayout>
